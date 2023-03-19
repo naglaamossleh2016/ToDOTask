@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #cefffd;
+  background-color: #009578;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100vh;
+  font-size: 1.8rem;
+}
+.heading {
+  font-size: 3.6rem;
+}
+.tasks_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
+}
+.task_box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.task {
+
+  color: #000;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.btn {
+  background-color: #00866d;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 100%;
+}
+input {
+  border: 0;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+.drag {
+  cursor: move;
+}
+
+input:focus {
+  outline: 0;
+}
+.input-container {
+  position: relative;
+  cursor: move;
+}
+.task_box a.fa-edit {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.4rem;
+  color: #000;
+  cursor: pointer;
+}
+.task_box a.fa-trash {
+  position: absolute;
+  right: 0.5rem;
+  top: 2rem;
+  color: orangered;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.task-section{
+padding: 1.4rem;
+border-radius: 1rem;
+}
+/* .disableInput {
+  opacity: 0.8;
+  background-color: #c5e5df;
+  cursor: move;
+} */
+.enableInput {
+  text-decoration: underline;
+  background-color: #fff;
+  opacity: 1;
+  cursor: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 50em) {
+  .tasks_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+}

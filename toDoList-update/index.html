@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script
+      src="https://kit.fontawesome.com/d5ef631457.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">To Do List</h2>
+    </div>
+    <div class="tasks_container" >
+      <div class="task-section">
+        <h2 class="title">Not Started</h2>
+        <div class="task_box" id="task-box-start"></div>
+        <div class="add-div">
+          <button class="btn" id="add">+ Add</button>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <h2 class="title">In Progress</h2>
+        <div class="task_box" id="task-box-progress"></div>
+        <div class="add-div">
+          <button class="btn">+ Add</button>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <h2 class="title">Completed</h2>
+        <div class="task_box" id="task-box-complete"></div>
+        <div class="add-div">
+          <button class="btn">+ Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
